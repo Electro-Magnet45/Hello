@@ -1,3 +1,7 @@
+//BLAST JS
+$("#bastText").blast({ delimiter: "character" });
+//~BLAST JS~
+
 const showNavItems = document.getElementById("icon");
 
 showNavItems.addEventListener("click", showItems);

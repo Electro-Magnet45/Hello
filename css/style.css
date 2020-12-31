@@ -2,16 +2,43 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: white;
   font-family: "Poppins", sans-serif;
+  color: rgb(101, 67, 179);
+  font-weight: lighter;
 }
+
+/*========== HEADER STARTING ============*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*========= LOGO SECTION ==============*/
+
+#logoSection {
+  width: 100px;
+}
+
+#logoSection h4 {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 22px;
+  height: auto;
+  width: 100px;
+}
+
+/*========= ~LOGO SECTION~ ==============*/
 
 /*========== NAVBAR STARTING ============*/
 
 #navBar {
+  margin-top: 30px;
   overflow: hidden;
   background-color: #ffff;
   float: right;
@@ -69,5 +96,7 @@ body {
 }
 
 /*========== NAVBAR ENDING ============*/
+
+/*========== HEADER ENDING ============*/
 
 /*===================== HOME PAGE ENDING ================================*/
