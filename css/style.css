@@ -1,0 +1,73 @@
+/*===================== HOME PAGE STARTING ================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/*========== NAVBAR STARTING ============*/
+
+#navBar {
+  overflow: hidden;
+  background-color: #ffff;
+  float: right;
+}
+
+#navBar a {
+  float: left;
+  display: block;
+  color: rgb(101, 67, 179);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+#navBar a:hover {
+  background-color: rgb(101, 67, 179);
+  color: #ffff;
+}
+
+#navBar a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+#navBar #icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #navBar a:not(:first-child) {
+    display: none;
+  }
+  #navBar a#icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navBar.responsive {
+    position: relative;
+  }
+  #navBar.responsive #icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*========== NAVBAR ENDING ============*/
+
+/*===================== HOME PAGE ENDING ================================*/
