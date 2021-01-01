@@ -1,15 +1,23 @@
+/*================== OTHER FUNCTIONS =====================*/
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+/*================== ~OTHER FUNCTIONS ~ =====================*/
+
 /*===================== HOME PAGE STARTING ================================*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  -webkit-user-select: none;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 /*========== HEADER STARTING ============*/
@@ -60,11 +68,6 @@ header {
   color: #ffff;
 }
 
-#navBar a.active {
-  background-color: #4caf50;
-  color: white;
-}
-
 #navBar #icon {
   display: none;
 }
@@ -113,6 +116,7 @@ body {
   top: 100px;
   left: 100px;
   width: fit-content;
+  display: inline-block;
 }
 
 #landingText {
@@ -157,7 +161,21 @@ body {
   color: #ffff;
   border: 0;
   border-radius: 6%;
+  outline: none !important;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+#animeDiv {
+  position: relative;
+  top: -300px;
+  left: 700px;
+  width: fit-content;
+  height: fit-content;
+}
+.landingAnime {
+  width: 300px;
+  height: 300px;
 }
 
 /*============== ~ LANDING SECTION ~ ===================*/
