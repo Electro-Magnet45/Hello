@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: white;
-  font-family: "Poppins", sans-serif;
-  color: rgb(101, 67, 179);
-  font-weight: lighter;
+html {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*========== HEADER STARTING ============*/
@@ -98,5 +98,68 @@ header {
 /*========== NAVBAR ENDING ============*/
 
 /*========== HEADER ENDING ============*/
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: rgb(101, 67, 179);
+  font-weight: lighter;
+}
+
+/*============== LANDING SECTION ===================*/
+
+#landingDiv {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: fit-content;
+}
+
+#landingText {
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  line-height: 100px;
+}
+#landingText span {
+  color: orange;
+}
+
+#svgDiv {
+  display: inline-flex;
+  position: relative;
+  left: 30px;
+  padding-top: 20px;
+  width: fit-content;
+}
+#svgDiv p {
+  color: grey;
+  font-size: 1em;
+  font-style: italic;
+  word-wrap: break-word;
+  max-width: 500px;
+  padding-left: 12px;
+}
+
+.boySvg {
+  fill: lightcoral;
+}
+
+.findPeople {
+  position: relative;
+  top: 100px;
+  left: -510px;
+  width: 190px;
+  height: 50px;
+  background-color: rgb(247, 169, 2);
+  color: #ffff;
+  border: 0;
+  border-radius: 6%;
+  font-family: "Poppins", sans-serif;
+}
+
+/*============== ~ LANDING SECTION ~ ===================*/
 
 /*===================== HOME PAGE ENDING ================================*/
