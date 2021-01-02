@@ -20,6 +20,98 @@
   box-sizing: border-box;
 }
 
+/*=================== PRELOADER ===================*/
+
+.preloaderShow {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  right: 0;
+  height: 50%;
+}
+.preloaderHide {
+  transition: 0.4s ease-in;
+  display: none;
+}
+
+.preloaderChat {
+  width: 300px;
+  margin: 50px auto;
+  border: 4px solid #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #00bfb6;
+  font-family: arial;
+  position: relative;
+}
+.sb2 h1 {
+  color: orange;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px !important;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 6px;
+}
+.sb2:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 7px solid #fff;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+  border-bottom: 7px solid transparent;
+  right: -11px;
+  top: 10px;
+}
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: 20px;
+  bottom: -23px;
+}
+.sb1:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #fff;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: 24px;
+  bottom: -13px;
+}
+
+.sb1 .animate__fadeInLeft {
+  --animate-duration: 2s;
+}
+
+.sb2 .animate__fadeInRight {
+  --animate-duration: 2s;
+}
+
+/*=================== ~ PRELOADER ~ ===================*/
 /*========== HEADER STARTING ============*/
 
 header {
@@ -109,6 +201,18 @@ body {
   font-weight: lighter;
 }
 
+/*======================= MAIN ===================*/
+
+.mainDivHidden {
+  display: none;
+}
+
+.mainDivShow {
+  transition: 0.4s ease-in;
+  display: block;
+}
+
+/*======================= ~ MAIN ~ ===================*/
 /*============== LANDING SECTION ===================*/
 
 #landingDiv {
