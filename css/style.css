@@ -210,6 +210,7 @@ body {
 .mainDivShow {
   transition: 0.4s ease-in;
   display: block;
+  height: fit-content;
 }
 
 /*======================= ~ MAIN ~ ===================*/
@@ -220,6 +221,7 @@ body {
   top: 100px;
   left: 100px;
   width: fit-content;
+  height: 400px;
   display: inline-block;
 }
 
@@ -261,13 +263,17 @@ body {
   left: -510px;
   width: 190px;
   height: 50px;
-  background-color: rgb(247, 169, 2);
-  color: #ffff;
+  background-color: #ffff;
+  color: rgb(247, 169, 2);
   border: 0;
   border-radius: 6%;
   outline: none !important;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+}
+.findPeople:hover {
+  color: #ffff;
+  background-color: rgb(247, 169, 2);
 }
 
 #animeDiv {
@@ -283,5 +289,20 @@ body {
 }
 
 /*============== ~ LANDING SECTION ~ ===================*/
+
+/*================== FEATURE SECTION ======================*/
+#featureSection {
+  position: relative;
+  height: auto;
+  width: fit-content;
+  align-items: center;
+}
+#featureSection .featureAnimeDiv {
+  position: relative;
+  top: auto;
+  width: 500px;
+  margin: auto;
+}
+/*================== ~ FEATURE SECTION ~ ======================*/
 
 /*===================== HOME PAGE ENDING ================================*/

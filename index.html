@@ -17,6 +17,8 @@
     />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <title>Hello</title>
   </head>
   <body>
@@ -34,7 +36,7 @@
         </a>
       </div>
     </header>
-    <div id="preloader" class="preloaderShow">
+    <div id="preloader" class="preloaderHide">
       <div id="sb1" class="preloaderChat sb1 animate__animated">
         Hi Server !
       </div>
@@ -42,7 +44,7 @@
         <h1>Hello</h1>
       </div>
     </div>
-    <div id="mainDiv" class="mainDivHidden">
+    <div id="mainDiv" class="mainDivShow">
       <div class="landing" id="landingDiv">
         <h2 id="landingText">
           Say <span>Hello </span> <br />
@@ -81,6 +83,19 @@
             alt="animation"
             class="landingAnime"
           />
+        </div>
+      </div>
+      <div id="featureSection">
+        <div class="featureAnimeDiv">
+          <lottie-player id="noRegisteration"
+            src="./img/lf30_editor_bfvnvxds.json"
+            background="transparent"
+            speed="1"
+            style="width: 110px; height: 110px"
+            loop
+            autoplay
+            class="noRegisteration"
+          ></lottie-player>
         </div>
       </div>
     </div>

@@ -15,6 +15,18 @@ function showItems() {
   }
 }
 
+LottieInteractivity.create({
+  mode:"scroll",
+  player:'#noRegisteration',
+  actions: [
+      {
+          visibility:[0,1],
+          type: "seek",
+          frames: [0, 120],
+      },
+  ]  
+});
+
 chat1.style.opacity = "0";
 chat2.style.opacity = "0";
 
